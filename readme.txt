@@ -1,7 +1,7 @@
-=== SIP Reviews Shortcode for WooCommerce ===
+﻿=== SIP Reviews Shortcode for WooCommerce ===
 Contributors: (shopitpress, fransanchezoria, arslan104, hafizusman)
 Tags: SIP Reviews Shortcode WooCommerce, reviews, woocommerce, shortcode, review shortcode
-Requires at least: 3.0.1
+Requires at least: 4.1.1
 Tested up to: 4.2.3
 Stable tag: 1.0.0
 License: GPLv2 or later
