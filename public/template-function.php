@@ -12,12 +12,12 @@
 	 */
 	if ( in_array ( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ){
 		
-		add_action ( 'media_buttons_context','add_my_tinymce_media_button' );
-		add_action ( 'admin_footer','shortcode_media_button_popup' );
-		add_action ( 'admin_footer','shortcode_add_shortcode_to_editor' );
+		add_action ( 'media_buttons_context','sip_rswc_tinymce_media_button' );
+		add_action ( 'admin_footer','sip_rswc_media_button_popup' );
+		add_action ( 'admin_footer','sip_rswc_add_shortcode_to_editor' );
 		add_shortcode ('woocommerce_reviews', 'sip_review_shortcode_wc' );
-		add_action( 'admin_init',  'settings_init'  );
-		add_action( 'admin_enqueue_scripts' ,  'add_styles_scripts' ); 
+		add_action( 'admin_init',  'sip_rswc_settings_init'  );
+		add_action( 'admin_enqueue_scripts' ,  'sip_rswc_add_styles_scripts' ); 
 	}
 
 
@@ -373,7 +373,7 @@
 	 *
 	 * @since    	1.0.0
 	 */
-	function add_my_tinymce_media_button( $context ) {
+	function sip_rswc_tinymce_media_button( $context ) {
 		return $context .= __("<a href=\"#TB_inline?width=180&inlineId=shortcode_popup&width=540&height=153\" class=\"button thickbox\" id=\"shortcode_popup_button\" title=\"Product Reviews\">Produtc Reviews</a>");
 	}
 
@@ -382,7 +382,7 @@
 	 *
 	 * @since    	1.0.0
 	 */
-	function shortcode_media_button_popup() { ?>
+	function sip_rswc_media_button_popup() { ?>
   	<div id="shortcode_popup" style="display:none;">
     	<div class="wrap">
       	<div>
@@ -419,7 +419,7 @@
 	 *
 	 * @since    	1.0.0
 	 */
-	function shortcode_add_shortcode_to_editor() { ?>
+	function sip_rswc_add_shortcode_to_editor() { ?>
 		<script>
 			jQuery('#id_of_button_clicked ').on('click',function(){
 			  var shortcode_id 				= jQuery('#woocommerce_review_id').val();
@@ -445,36 +445,8 @@
 	 * @since    	1.0.0
 	 */
 	
-	function sip_rs_settings_page_ui() { ?>
+	function sip_rswc_settings_page_ui() { ?>
 
-	<div class="sip-rs-wrap">
-	  <div class="sip-rs-settings-header">
-	  	<div class="sip-rs-header-left">
-	  		<div class="divider rs"></div>
-	  		<h1 class="rs"><?php echo SIP_RS_NAME ; ?></h1>
-	  		<h3>Display product reviews in any post/page with a shortcode.</h3>
-	  	</div>
-	  	<div class="sip-rs-header-right">
-	  		<img class="sip-rs-header-img" src="<?php echo SIP_RS_URI ?>admin/assets/images/icon-wooreviews.png">
-	  	</div>
-	  </div>
-
-		<div class="container">
-	  	<div class="accordion">
-	    	<h3 class="panel-title">Usage</h3>
-	    	<div class="panel-content">
-					<div style="display: block;"><br>
-					  <p style="padding:10px 20px"><strong class="sip-sp-strong">Shortcode usage example:</strong> [woocommerce_reviews id="2075" product_title="My Awesome Product" no_of_reviews="5" ]</p>
-					  <p style="padding:10px 20px"><strong>id</strong> (optional) is the ID of the WooCoommerce product you want to display. [woocommerce_reviews] without id input will show the reviews of the current product if applicable.<br>
-					  <strong>product_title</strong> (optional) is the name of the product you want to display. This is used for Schema only (by default is the product name in WooCommerce).<br>
-					  <strong>no_of_reviews</strong> (optional) is the number of reviews loaded per page (default = 5). Additional reviews can be loaded after clicking in "Load more" button.<br>
-					  </p>
-					  <p style="padding:10px 20px">SIP Reviews Shortcode for WooCommerce is fully-compatible with Schema.org, allowing you to display product ratings directly from Google's results. You may test your Schema at <a href="https://developers.google.com/structured-data/testing-tool/">Google Structured Data Testing Tool</a>.</p>
-	     		</div>
-	     	</div>
-	  	</div>
-		</div><!-- .wrap -->
-	</div>
 
 	<div class="wrap">
 	  <?php screen_icon(); ?>
@@ -491,79 +463,6 @@
 	  </form>
 	</div>
 
-	<script type="text/javascript">
-		
-
-		// Hiding the panel content. If JS is inactive, content will be displayed
-	  jQuery( '.panel-content' ).hide();
-
-	  // Preparing the DOM
-	  
-	  // -- Update the markup of accordion container 
-	  jQuery( '.accordion' ).attr({
-	    role: 'tablist',
-	    multiselectable: 'true'
-	   });
-
-	  // -- Adding ID, aria-labelled-by, role and aria-labelledby attributes to panel content
-	  jQuery( '.panel-content' ).attr( 'id', function( IDcount ) { 
-	    return 'panel-' + IDcount; 
-	  });
-	  jQuery( '.panel-content' ).attr( 'aria-labelledby', function( IDcount ) { 
-	    return 'control-panel-' + IDcount; 
-	  });
-	  jQuery( '.panel-content' ).attr( 'aria-hidden' , 'true' );
-	  // ---- Only for accordion, add role tabpanel
-	  jQuery( '.accordion .panel-content' ).attr( 'role' , 'tabpanel' );
-	  
-	  // -- Wrapping panel title content with a <a href="">
-	  jQuery( '.panel-title' ).each(function(i){
-	    
-	    // ---- Need to identify the target, easy it's the immediate brother
-	    $target = jQuery(this).next( '.panel-content' )[0].id;
-	    
-	    // ---- Creating the link with aria and link it to the panel content
-	    $link = jQuery( '<a>', {
-	      'href': '#' + $target,
-	      'aria-expanded': 'false',
-	      'aria-controls': $target,
-	      'id' : 'control-' + $target
-	    });
-	    
-	    // ---- Output the link
-	    jQuery(this).wrapInner($link);  
-	    
-	  });
-
-	  // Optional : include an icon. Better in JS because without JS it have non-sense.
-	  jQuery( '.panel-title a' ).append('<span class="icon"><b>+<b></span>');
-
-	  // Now we can play with it
-	  jQuery( '.panel-title a' ).click(function() {
-	    
-	    if (jQuery(this).attr( 'aria-expanded' ) == 'false'){ //If aria expanded is false then it's not opened and we want it opened !
-	      
-	      // -- Only for accordion effect (2 options) : comment or uncomment the one you want
-	      
-	      // ---- Option 1 : close only opened panel in the same accordion
-	      //      search through the current Accordion container for opened panel and close it, remove class and change aria expanded value
-	      jQuery(this).parents( '.accordion' ).find( '[aria-expanded=true]' ).attr( 'aria-expanded' , false ).removeClass( 'active' ).parent().next( '.panel-content' ).slideUp(200).attr( 'aria-hidden' , 'true');
-
-	      // Option 2 : close all opened panels in all accordion container
-	      //$('.accordion .panel-title > a').attr('aria-expanded', false).removeClass('active').parent().next('.panel-content').slideUp(200);
-	      
-	      // Finally we open the panel, set class active for styling purpos on a and aria-expanded to "true"
-	      jQuery(this).attr( 'aria-expanded' , true ).addClass( 'active' ).parent().next( '.panel-content' ).slideDown(200).attr( 'aria-hidden' , 'false');
-
-	    } else { // The current panel is opened and we want to close it
-
-	      jQuery(this).attr( 'aria-expanded' , false ).removeClass( 'active' ).parent().next( '.panel-content' ).slideUp(200).attr( 'aria-hidden' , 'true');;
-
-	    }
-	    // No Boing Boing
-	    return false;
-	  });
-	</script>
 	<?php 
 
 	} 
@@ -573,7 +472,7 @@
 	 *
 	 * @since    	1.0.0
 	 */
-	function settings_init(){
+	function sip_rswc_settings_init(){
 
 	  register_setting(
 	    'wp_color_picker_options',
@@ -676,7 +575,7 @@
 	 *
 	 * @since    	1.0.0
 	 */
-	function add_styles_scripts(){
+	function sip_rswc_add_styles_scripts(){
 	  //Access the global $wp_version variable to see which version of WordPress is installed.
 	  global $wp_version;
 	  
@@ -694,6 +593,6 @@
 	  }
 	  
 	  //Load our custom Javascript file
-	  wp_enqueue_script( 'wp-color-picker-settings', plugin_dir_url(__FILE__) . 'assets/lib/js/settings.js' );
+	  wp_enqueue_script( 'wp-color-picker-settings', SIP_RSWC_URL . 'public/assets/lib/js/settings.js' );
 	}
 

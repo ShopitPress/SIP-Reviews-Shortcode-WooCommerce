@@ -89,12 +89,12 @@
 }
 
 #load_more button{
-  font-weight: bold;
-  width: 100%;
-  padding: 10px 0px;
+  /*font-weight: bold;*/
+  /*width: 100%;*/
+  /*padding: 10px 0px;*/
   margin-top: 10px;
   text-align: center;
-  font-size: 1.4em;
+  /*font-size: 1.4em;*/
   cursor: pointer;
 }
   

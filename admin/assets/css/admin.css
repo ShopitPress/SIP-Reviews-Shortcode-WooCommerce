@@ -1,27 +1,27 @@
 .shopitpress-addon {
-	border: 1px solid #ccc;
-	background: #fff;
-	border-radius: 3px;
-	float: left;
-	margin: 0 2% 2% 0;
-	min-height: 485px;
-	padding: 20px;
-	text-align: center;
-	width: 30%;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 3px;
+  float: left;
+  margin: 0 2% 2% 0;
+  min-height: 485px;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 .shopitpress-addon h1{
-	color: #06539d;
-	text-align: center;
+  color: #333333;
+  text-align: center;
   line-height: initial;
 }
 
 .shopitpress-addon p{
-	font-size: 14px;
-	text-align: center;
+  font-size: 14px;
+  text-align: center;
 }
 
 .shopitpress-addon-thumb {
@@ -32,63 +32,63 @@
 }
 
 .shopitpress-addon-action .button {
-	-moz-border-radius: 4px;
+  -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   margin-bottom: 5px;
   margin-top: 10px;
-	width: 50%;
+  width: 50%;
 }
 
 .shopitpress-addon-action{
-	text-align: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 782px){
-	.shopitpress-addon {
-	float: none;
-  	margin-right:0;
-  	width:auto;
-  	border:0;			
-	}
+  .shopitpress-addon {
+  float: none;
+    margin-right:0;
+    width:auto;
+    border:0;     
+  }
 }
 
 .sip-rs-wrap .sip-rs-settings-header {
-	width: 97%;
-	background-color: #fff;
-	min-height: 230px;
-	margin-top: 10px;
-	padding: 10px;
+  width: 97%;
+  background-color: #fff;
+  min-height: 230px;
+  margin-top: 10px;
+  padding: 10px;
 }
 
 .divider {
-	min-height: 60px;
+  min-height: 60px;
 }
 
 .sip-rs-wrap .sip-rs-header-left {
-	width: 75%;
-	float: left;
-	min-height: 190px;
-	text-align: center;
+  width: 75%;
+  float: left;
+  min-height: 190px;
+  text-align: center;
 }
 
 .sip-rs-wrap .sip-rs-header-left h1 {
-	font-size: 40px;
+  font-size: 40px;
 }
 
 .sip-rs-wrap .sip-rs-header-left h3 {
-	font-size: 25px;
+  font-size: 25px;
 }
 .sip-rs-wrap .sip-rs-header-right {
-	width: 25%;
-	float: left;
+  width: 25%;
+  float: left;
 }
 .sip-rs-wrap .sip-rs-header-img {
-	padding-top: 10px;
-	max-width: 80%;
+  padding-top: 10px;
+  max-width: 80%;
 }
-	
-.container {
+  
+.sip-container {
   width: 94%;
 }
 .container h1,
@@ -149,8 +149,8 @@
 }
 
 .container .panel-title a.active {
-	color:#fff!important;
-	background:#06539d;
+  color:#fff!important;
+  background:#06539d;
 }
 
 .container .panel-title a .icon {
@@ -167,8 +167,8 @@
 }
 
 .container .panel-title a.active .icon{
-	color:#777!important;
-	background:#fff;
+  color:#777!important;
+  background:#fff;
 }
 
 .container .panel-title a:hover,
@@ -200,26 +200,26 @@
 }
 
 .panel-content{
-	background-color:#fff;
-	width:105%;
+  background-color:#fff;
+  width:100%;
 }
 
 .toggle-table{
-	width: 97%;
-	border-top: 1px solid #ececec;
-	margin-left: 18px;
+  width: 97%;
+  border-top: 1px solid #ececec;
+  margin-left: 18px;
 }
 .toggle-table td:nth-child(1) {  
-	width: 40%;
+  width: 40%;
 }
 .toggle-table td:nth-child(2) { 
-	width: 60%;	
+  width: 60%; 
 }
 
 .toggle-table tr:nth-child(2n+1) {
     background-color: #fcfcfc;
-	text-align:center;
-	height: 50px;
+  text-align:center;
+  height: 50px;
 }
 
 .toggle-table td {
@@ -232,17 +232,17 @@
 }
 
 .container .sip-rs-button{
-	height:55px;
-	padding:12px 35px 0px 35px;
-	font-size: 20px;
+  height:55px;
+  padding:12px 35px 0px 35px;
+  font-size: 20px;
 }
 
 .wps-strong{
-	font-size:15px;
+  font-size:15px;
 }
 
 p .wps-strong{
-	height:50px;
+  height:50px;
 }
 
 tr td:first-child {
@@ -252,7 +252,7 @@ tr td:first-child {
 }
 
 p{
-	padding-right:2px;
+  padding-right:2px;
 }
 
 .sip-rs-wrap .sip-rs-settings-header {
@@ -266,7 +266,7 @@ p{
 
 .panel-content {
   background-color: #fff;
-  width: 105%;
+  width: 100%;
   box-shadow: 0 2px 3px rgba(0,0,0,0.3);
 }
 
@@ -282,64 +282,83 @@ h3 {
   line-height: initial;
 }
 
+.sip-version {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  right: 0px;
+}
+
+.sip.button.button-primary {
+  background-color: #ed1c24;
+  border-color: #ad1c24
+}
+
+.sip.button.button-primary:hover {
+  background-color: #ad1c24;
+  border-color: #ad1c24
+}
+
 @media screen and (min-width: 1260px){
   .container .accordion {
-    width: 94.3%;
+    width: 100%;
   }
   .panel-content {
-    width: 105.4%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1259px){
   .container .accordion {
-    width: 94%;
+    width: 100%;
   }
   .panel-content {
-    width: 107.1%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1024px){
   .container .accordion {
-    width: 94%;
+    width: 100%;
   }
   .panel-content {
-    width: 107.1%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 899px){
   .container .accordion {
-    width: 93.5%;
+    width: 100%;
   }
   .panel-content {
-    width: 108.2%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
   .container .accordion {
-    width: 93%;
+    width: 100
+    %;
   }
   .panel-content {
-    width: 108.4%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px){
   .container .accordion {
-    width: 93%;
+    width: 100%;
   }
   .panel-content {
-    width: 113.7%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 240px) and (max-width: 320px){
   .container .accordion {
-    width: 93%;
+    width: 100%;
   }
   .panel-content {
-    width: 113.4%;
+    width: 100%;
   }
 }
