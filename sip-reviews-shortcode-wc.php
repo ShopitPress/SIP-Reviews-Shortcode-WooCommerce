@@ -18,7 +18,7 @@
  * Copyright: 		  © 2015 ShopitPress(email: hello@shopitpress.com)
  * Text Domain:       sip-reviews-shortcode
  * Domain Path:       /languages
- * Last updated on:   14-08-2015
+ * Last updated on:   16-08-2015
 */
 
 class SIP_Reviews_Shortcode_WC{
