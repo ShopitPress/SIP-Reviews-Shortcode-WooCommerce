@@ -448,7 +448,7 @@
 	function sip_rswc_settings_page_ui() { ?>
 
 
-	<div class="wrap">
+	<div class="sip-rswc-wrap">
 	  <?php screen_icon(); ?>
 	  <h2>Custom Color Settings</h2>
 	  <form id="wp-color-picker-options" action="options.php" method="post">

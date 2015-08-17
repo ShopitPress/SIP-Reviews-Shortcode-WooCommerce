@@ -26,7 +26,7 @@ $extensions = array(
 ?>
 
 
-<div id="shopitpress-wraper">
+<div id="sip-wraper">
 
 <?php 
     $i = 0;
@@ -37,12 +37,12 @@ $extensions = array(
         $title		 = $extension->title ;
         $description = $extension->desc ; 
  		?>
-		<div class="shopitpress-addon">
+		<div class="sip-addon">
         <h1><?php echo $title ?></h1>
         <p><?php echo $description ?></p>
-			<img class="shopitpress-addon-thumb" src="<?php echo $image_url; ?>" width="300px" height="250px" alt="<?php echo $title; ?>">
-			<div class="shopitpress-addon-action">
-				<a class="sip active-addon button button-primary " title="<?php echo $title; ?>" href="<?php echo $url; ?>" target="_blank">Learn more</a>
+			<img class="sip-addon-thumb" src="<?php echo $image_url; ?>" width="300px" height="250px" alt="<?php echo $title; ?>">
+			<div class="sip-addon-action">
+				<a class="button button-primary" title="<?php echo $title; ?>" href="<?php echo $url; ?>" target="_blank">Learn more</a>
 			</div>
 		</div> <!-- .shopitpress-addon -->
 		<?php $i++; 

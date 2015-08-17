@@ -3,13 +3,14 @@ Plugin Name: 	SIP Reviews Shortcode for WooCommerce
 Author: 	ShopitPress.com
 
 
-1.0.1 - 08/14/2015
+1.0.1 - 08/17/2015
 - Added prefixes to the function names
 - Updated SIP panel to version 1.0.1
 - Added plugin usage guide tab on the settings page
 - Updated the postion of submenu items in SIP Plugins menu
 - Updated plugin icons
 - Fixed minor CSS bugs
+- Fixed error notice position issue on plugin settings page
 
 1.0.0 - 08/10/2014
 - Initial release
