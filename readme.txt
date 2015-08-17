@@ -85,6 +85,7 @@ For screenshots and other information please visit <a href="https://shopitpress.
 * Updated the postion of submenu items in SIP Plugins menu
 * Updated plugin icons
 * Fixed minor CSS bugs
+* Fixed error notice position issue on plugin settings page
 
 = 1.0.0 =
 * Initial release
