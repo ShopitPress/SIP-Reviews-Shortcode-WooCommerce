@@ -18,6 +18,20 @@
 		add_shortcode ('woocommerce_reviews', 'sip_review_shortcode_wc' );
 		add_action( 'admin_init',  'sip_rswc_settings_init'  );
 		add_action( 'admin_enqueue_scripts' ,  'sip_rswc_add_styles_scripts' ); 
+		add_action( 'admin_init', 'sip_rswc_affiliate_register_admin_settings' );
+	}
+
+	 
+	 /**
+	 * registers credit/affiliate link options 
+	 *
+	 *
+	 * @since      1.0.1
+	 */
+	function sip_rswc_affiliate_register_admin_settings() { 
+		register_setting( 'sip-rswc-affiliate-settings-group', 'sip-rswc-affiliate-check-box' );
+		register_setting( 'sip-rswc-affiliate-settings-group', 'sip-rswc-affiliate-radio' );
+		register_setting( 'sip-rswc-affiliate-settings-group', 'sip-rswc-affiliate-affiliate-username' );
 	}
 
 
@@ -461,6 +475,7 @@
 	    </p>
 	    
 	  </form>
+	  <?php include( SIP_RSWC_DIR . 'admin/ui/affiliate.php'); ?>
 	</div>
 
 	<?php 

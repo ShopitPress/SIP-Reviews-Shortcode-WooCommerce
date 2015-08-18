@@ -12,4 +12,6 @@
     <p>We want to make your life easier and make you happy about choosing our plugins. We guarantee to respond to every inquiry within 1 business day.
     Please visit our <a href="https://shopitpress.com/community/?utm_source=wordpress.org&amp;utm_medium=backend-help&amp;utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">community</a> and ask us anything you need.</p>
   </div>
+  <?php include('affiliate.php'); ?>
 </div>
+
