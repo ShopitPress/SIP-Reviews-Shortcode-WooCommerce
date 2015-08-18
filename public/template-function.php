@@ -462,22 +462,22 @@
 	function sip_rswc_settings_page_ui() { ?>
 
 
-	<div class="sip-rswc-wrap">
-	  <?php screen_icon(); ?>
-	  <h2>Custom Color Settings</h2>
-	  <form id="wp-color-picker-options" action="options.php" method="post">
-	    <?php color_input(); ?>
-	    <?php settings_fields( 'wp_color_picker_options' ); ?>
-	    <?php do_settings_sections( 'wp-color-picker-settings' ); ?>
-	    
-	    <p class="submit">
-	      <input id="wp-color-picker-submit" name="Submit" type="submit" class="button-primary" value="<?php _e( 'Save Color' ); ?>" />
-	    </p>
-	    
-	  </form>
-	  <?php include( SIP_RSWC_DIR . 'admin/ui/affiliate.php'); ?>
+	<div class="sip-tab-content">
+		  <?php screen_icon(); ?>
+		  <h2>Custom Color Settings</h2>
+		  <form id="wp-color-picker-options" action="options.php" method="post">
+		    <?php color_input(); ?>
+		    <?php settings_fields( 'wp_color_picker_options' ); ?>
+		    <?php do_settings_sections( 'wp-color-picker-settings' ); ?>
+		    
+		    <p class="submit">
+		      <input id="wp-color-picker-submit" name="Submit" type="submit" class="button-primary" value="<?php _e( 'Save Color' ); ?>" />
+		    </p>
+		    
+		  </form>
+		  <?php include( SIP_RSWC_DIR . 'admin/ui/affiliate.php'); ?>
+	
 	</div>
-
 	<?php 
 
 	} 

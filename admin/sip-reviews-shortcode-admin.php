@@ -201,8 +201,8 @@ class SIP_Reviews_Shortcode_WC_Admin {
   
   function sip_rswc_settings_page() { ?>
 
-  <div class="sip-rswc-wrap wrap">
-  <h2>Sip Reviews Shortcode for Woocommerce</h2>
+  <div class="sip-panel-wrapper wrap">
+    <h2>Sip Reviews Shortcode for Woocommerce</h2>
     <div class="sip-container">
       <h2 class="nav-tab-wrapper">
         <a class="nav-tab<?php if ( !isset( $_GET['action'] ) ) echo ' nav-tab-active'; ?>" href="admin.php?page=sip-reviews-shortcode-settings"><?php _e( 'Settings', 'sip-reviews-shortcode' ); ?></a>

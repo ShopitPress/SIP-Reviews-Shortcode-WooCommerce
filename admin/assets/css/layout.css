@@ -130,3 +130,22 @@
   background-color: #333333;
   color: #fff;
 }
+
+/*SIP tab Content*/
+
+.sip-tab-content {
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+  padding: 20px;
+  margin-right: 2px;
+}
+
+.sip-tab-content strong{
+  padding-left: 0px;
+}
+
+/* Helpus */
+
+.helpus {
+  
+}

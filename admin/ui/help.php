@@ -1,4 +1,4 @@
-<div class="sip-rswc-content">
+<div class="sip-tab-content">
   <div style="display: block;">
     <h2>Usage</h2>
     <p><strong class="strong">Shortcode usage example:</strong> [woocommerce_reviews id="2075" product_title="My Awesome Product" no_of_reviews="5" ]</p>
