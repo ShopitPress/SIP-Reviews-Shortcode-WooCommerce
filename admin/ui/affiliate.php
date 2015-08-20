@@ -1,6 +1,7 @@
 <div class="sip-credit-affiliate-link-warp">
   <h2>Be awesome</h2>
   <p>Do you like this plugin? Would you like to see even more great features? Please be awesome and help us maintain and develop free plugins by checking the option below</p>
+	
 	<form method="post" action="options.php">
 	  <?php settings_fields( 'sip-rswc-affiliate-settings-group' ); ?>
 	  <?php $options = get_option('sip-rswc-affiliate-radio'); ?>
@@ -12,7 +13,7 @@
 				<div id="spc-rswc-affiliate-link-box">
 					<label><input type="text" name="sip-rswc-affiliate-affiliate-username" value="<?php echo esc_attr( get_option('sip-rswc-affiliate-affiliate-username')) ?>" /> Input affiliate username/ID</label><br />
 				</div>
-            <p class="sip-text">Make money recommending our plugins. Register for an affiliate account at <a href="https://shopitpress.com/affiliate-area/utm_source=wordpress.org&utm_medium=affiliate&utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">Shopitpress</a>.
+            <p class="sip-text">Make money recommending our plugins. Register for an affiliate account at <a href="https://shopitpress.com/affiliate-area/?utm_source=wordpress.org&amp;utm_medium=affiliate&amp;utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">Shopitpress</a>.
             </p>
 					</a>
 			</div>

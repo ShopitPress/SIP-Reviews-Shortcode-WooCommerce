@@ -140,7 +140,16 @@
 
 
 											<h3><?php echo number_format( $result, 2 ); ?> out of 5 stars</h3>
-											<p><?php echo $comments_count->approved ?> reviews</p>
+											<p class="rswc-front-review"><?php echo $comments_count->approved ?> reviews 
+												<?php $options = get_option('sip-rswc-affiliate-radio'); ?>
+												<?php if( 'value1' == $options['option_three'] ) { ?>
+													<span class="review-icon-image">
+														<a href="https://shopitpress.com/affiliate-area/?utm_source=wordpress.org&amp;utm_medium=affiliate&amp;utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank" data-tooltip="These reviews were created with SIP Reviews Shortcode Plugin">
+															<img src="<?php echo SIP_RSWC_URL ?>admin/assets/images/mini-logo.png">
+														</a>
+													</span>
+												<?php } ?>
+											</p>
 										</div>
 
 										<!-- it will show the table at the top -->
@@ -461,7 +470,6 @@
 
 	function sip_rswc_settings_page_ui() { ?>
 
-
 	<div class="sip-tab-content">
 		  <?php screen_icon(); ?>
 		  <h2>Custom Color Settings</h2>
@@ -476,6 +484,8 @@
 
 		  </form>
 		</div>
+		
+		<!-- affiliate/credit link -->
 		<?php include( SIP_RSWC_DIR . 'admin/ui/affiliate.php'); ?>
 	<?php
 

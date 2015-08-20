@@ -13,3 +13,6 @@
     Please visit our <a href="https://shopitpress.com/community/?utm_source=wordpress.org&amp;utm_medium=backend-help&amp;utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">community</a> and ask us anything you need.</p>
   </div>
 </div>
+
+<!-- affiliate/credit link -->
+<?php include( SIP_RSWC_DIR . 'admin/ui/affiliate.php'); ?>
