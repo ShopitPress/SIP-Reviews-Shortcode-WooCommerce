@@ -1,0 +1,2 @@
+Plugin Name: 	SIP Social Proof for WooCommerce
+Authors: 	shopitpress, fransanchezoria, arslan104, dhmusman
