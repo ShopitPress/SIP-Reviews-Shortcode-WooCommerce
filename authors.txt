@@ -1,2 +1,2 @@
-Plugin Name: 	SIP Social Proof for WooCommerce
+Plugin Name: 	SIP Reviews Shortcode for WooCommerce
 Authors: 	shopitpress, fransanchezoria, arslan104, dhmusman
