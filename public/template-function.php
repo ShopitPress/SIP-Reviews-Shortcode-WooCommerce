@@ -140,14 +140,15 @@
 
 
 											<h3><?php echo number_format( $result, 2 ); ?> out of 5 stars</h3>
-											<p class="rswc-front-review"><?php echo $comments_count->approved ?> 
-												<?php $options = get_option('sip-rswc-affiliate-radio'); ?>
-												<?php if( 'value1' == $options['option_three'] ) { ?>
-													<span class="review-icon-image">
-													 reviews
-													<a class="sip-rswc-credit" href="https://shopitpress.com/affiliate-area/?utm_source=wordpress.org&amp;utm_medium=affiliate&amp;utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank" data-tooltip="These reviews were created with SIP Reviews Shortcode Plugin"></a>
-													</span>
-												<?php } ?>
+											<p class="rswc-front-review"><?php echo $comments_count->approved ?>
+												<span class="review-icon-image">reviews		
+													<?php if(get_option('sip-rswc-affiliate-check-box') == "true") { ?>
+														<?php $options = get_option('sip-rswc-affiliate-radio'); ?>
+														<?php if( 'value1' == $options['option_three'] ) { $url = "https://shopitpress.com/?utm_source=referral&utm_medium=credit&utm_campaign=sip-reviews-shortcode-woocommerce" ; } ?>
+														<?php if( 'value2' == $options['option_three'] ) { $url = "https://shopitpress.com/?offer=". esc_attr( get_option('sip-rswc-affiliate-affiliate-username')) ; } ?>
+														<a class="sip-rswc-credit" href="<?php echo $url ; ?>" target="_blank" data-tooltip="These reviews were created with SIP Reviews Shortcode Plugin"></a>
+													<?php } ?>
+												</span>
 											</p>
 										</div>
 
