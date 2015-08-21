@@ -82,7 +82,7 @@ For screenshots and other information please visit <a href="https://shopitpress.
 * Added prefixes to the function names
 * Added plugin usage guide tab on the settings page
 * Added the discrete credit link checkbox option in plugin settings page
-* Added affiliate.php in /admin/ui/ folder
+* Added affiliate/credit link option on settings tab and front end
 * Updated SIP panel to version 1.0.1
 * Updated the postion of submenu items in SIP Plugins menu
 * Updated plugin icons
