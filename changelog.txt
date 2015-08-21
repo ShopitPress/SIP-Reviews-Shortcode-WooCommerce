@@ -3,7 +3,7 @@ Plugin Name: 	SIP Reviews Shortcode for WooCommerce
 Author: 	ShopitPress.com
 
 
-1.0.1 - 08/20/2015
+1.0.1 - 08/21/2015
 - Added prefixes to the function names
 - Added plugin usage guide tab on the settings page
 - Added the discrete credit link checkbox option in plugin settings page
