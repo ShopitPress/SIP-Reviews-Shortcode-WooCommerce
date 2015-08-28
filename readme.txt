@@ -1,8 +1,8 @@
 ﻿=== SIP Reviews Shortcode for WooCommerce ===
-Contributors: (shopitpress, fransanchezoria, arslan104, hafizusman)
+Contributors: (shopitpress, fransanchezoria, arslan104)
 Tags: SIP Reviews Shortcode WooCommerce, reviews, woocommerce, shortcode, review shortcode
-Requires at least: 4.1
-Tested up to: 4.2.3
+Requires at least: 3.8 or higher
+Tested up to: 4.2.4
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -78,7 +78,7 @@ For screenshots and other information please visit <a href="https://shopitpress.
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0.1 - 08/21/2015 =
 * Added prefixes to the function names
 * Added plugin usage guide tab on the settings page
 * Added the discrete credit link checkbox option in plugin settings page
@@ -89,7 +89,7 @@ For screenshots and other information please visit <a href="https://shopitpress.
 * Fixed minor CSS bugs
 * Fixed error notice position issue on plugin settings page
 
-= 1.0.0 =
+= 1.0.0 - 08/10/2015 =
 * Initial release
 
 == Upgrade Notice ==

@@ -14,5 +14,5 @@ Author: 	ShopitPress.com
 - Fixed minor CSS bugs
 - Fixed error notice position issue on plugin settings page
 
-1.0.0 - 08/10/2014
+1.0.0 - 08/10/2015
 - Initial release

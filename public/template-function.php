@@ -397,7 +397,7 @@
 	 * @since    	1.0.0
 	 */
 	function sip_rswc_tinymce_media_button( $context ) {
-		return $context .= __("<a href=\"#TB_inline?width=180&inlineId=shortcode_popup&width=540&height=153\" class=\"button thickbox\" id=\"shortcode_popup_button\" title=\"Product Reviews\">Produtc Reviews</a>");
+		return $context .= __("<a href=\"#TB_inline?width=180&inlineId=shortcode_popup&width=540&height=153\" class=\"button thickbox\" id=\"shortcode_popup_button\" title=\"Product Reviews\">Product Reviews</a>");
 	}
 
 	/**
@@ -425,7 +425,7 @@
 	        			<th><label for="woocommerce_review_comments">No. of Reviews : </label></th>
 	        			<td>
 	        				<input type="text" id="woocommerce_review_comments">
-	        				<button class="button-primary" id="id_of_button_clicked">Add ID</button>
+	        				<button class="button-primary" id="id_of_button_clicked">Insert Reviews</button>
 	        			</td>
 	        		</tr>
 	        	</table>
