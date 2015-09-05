@@ -137,6 +137,32 @@
   left: 0;
 }
 
+
+#review_form_wrapper p.stars a.star-1.active:after,
+#review_form_wrapper p.stars a.star-1:hover:after {
+	content:""
+}
+
+#review_form_wrapper p.stars a.star-2.active:after,
+#review_form_wrapper p.stars a.star-2:hover:after {
+	content:""
+}
+
+#review_form_wrapper p.stars a.star-3.active:after,
+#review_form_wrapper p.stars a.star-3:hover:after {
+	content:""
+}
+
+#review_form_wrapper p.stars a.star-4.active:after,
+#review_form_wrapper p.stars a.star-4:hover:after {
+	content:""
+}
+
+#review_form_wrapper p.stars a.star-5.active:after,
+#review_form_wrapper p.stars a.star-5:hover:after {
+	content:""
+}
+
 #review_form_wrapper p.stars a.star-1:after {
   content: "\e021";
 }

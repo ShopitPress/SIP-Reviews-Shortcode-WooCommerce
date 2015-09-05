@@ -1,9 +1,9 @@
 ﻿=== SIP Reviews Shortcode for WooCommerce ===
-Contributors: (shopitpress, fransanchezoria, arslan104)
+Contributors: (shopitpress, fransanchezoria)
 Tags: SIP Reviews Shortcode WooCommerce, reviews, woocommerce, shortcode, review shortcode
 Requires at least: 3.8 or higher
-Tested up to: 4.2.4
-Stable tag: 1.0.1
+Tested up to: 4.3
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ Show WooCommerce product reviews anywhere with a shortcode.
 >
 > [More information](https://shopitpress.com/plugins/sip-reviews-shortcode-woocommerce/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce) | [Try Live Demo >>](https://demo.shopitpress.com/plugins/sip-reviews-shortcode-woocommerce/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce)
 
-If you have a landing page for your product that is not a WooCommerce product page, then this plugin is perfect for you. It allows you to insert the reviews of the product you are promoting anywhere you like. It also inserts the product Schema into the page, allowing you to display the rating directly from Google’s search results. 
+If you have a landing page for your product that is not a WooCommerce product page, then this plugin is perfect for you. It allows you to insert the reviews of the product you are promoting anywhere you like. It also inserts the product Schema into the page, allowing you to display the rating directly from Google’s search results.
 
 <h3>Take control of your product reviews</h3>
 WooCommerce product pages are great, but sometimes you have to promote products from a normal post or page. In the past you would have to manually copy/paste your product reviews, but SIP Reviews Shortcode for WooCommerce is here to the rescue! Not only it will show a live feed of your product reviews, it will also insert Schema and show your product rating directly from Google’s search results.
@@ -26,7 +26,7 @@ WooCommerce product pages are great, but sometimes you have to promote products 
 <h3>Key Features</h3>
 
 The plugin is packaged with the following features:
- 
+
 * **Display product reviews anywhere with a shortcode**.
 * **Insert product Schema (name, price, rating) anywhere with a shortcode**.
 * **Customisable style.** The plugin comes with a color picker for all elements so you can easily match your theme in a few minutes.
@@ -46,30 +46,30 @@ Shortcode usage example: [woocommerce_reviews id="2075" product_title="My Awesom
 
 = Need Support? We Got Your Back =
 
-All of our plugins come with free support. We care about your plugin after purchase just as much as you do. 
+All of our plugins come with free support. We care about your plugin after purchase just as much as you do.
 We want to make your life easier and make you happy about choosing our plugins. We guarantee to respond to every inquiry within 1 business day.
 Please visit our <a href="https://shopitpress.com/community/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">community</a> and ask us anything you need.
 
 = Additional Resources =
 
-* View SIP Reviews Shortcode for WooCommerce <a href="https://demo.shopitpress.com/plugins/sip-reviews-shortcode-woocommerce/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">live demo</a>.  
-* Check out our other <a href="https://shopitpress.com/plugins/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">WooCommerce plugins</a> and <a href="https://shopitpress.com/themes/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">WooCommerce themes</a>.  
-* Visit our <a href="https://shopitpress.com/community/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">community</a>.  
-* Follow Shopitpress on <a title="Follow Shopitpress on Facebook" href="https://www.facebook.com/shopitpress" target="_blank">Facebook</a> and 
-<a title="Follow Shopitpress on Twitter" href="https://twitter.com/shopitpress" target="_blank">Twitter</a> 
+* View SIP Reviews Shortcode for WooCommerce <a href="https://demo.shopitpress.com/plugins/sip-reviews-shortcode-woocommerce/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">live demo</a>.
+* Check out our other <a href="https://shopitpress.com/plugins/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">WooCommerce plugins</a> and <a href="https://shopitpress.com/themes/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">WooCommerce themes</a>.
+* Visit our <a href="https://shopitpress.com/community/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce" target="_blank">community</a>.
+* Follow Shopitpress on <a title="Follow Shopitpress on Facebook" href="https://www.facebook.com/shopitpress" target="_blank">Facebook</a> and
+<a title="Follow Shopitpress on Twitter" href="https://twitter.com/shopitpress" target="_blank">Twitter</a>
 
 == Installation ==
 
-Install and activate the plugin.  
-You will find ‘SIP Plugins’ menu in your WordPress admin panel.  
+Install and activate the plugin.
+You will find ‘SIP Plugins’ menu in your WordPress admin panel.
 Usage is explained in the plugin backend.
 
 == Frequently Asked Questions ==
 
-= What are the differences between the free and Add On? = 
-  
+= What are the differences between the free and Add On? =
+
 <strong>Can I display the submit review form with this plugin?</strong>
- 
+
 At the moment the review submit form is not displayed, though we are planing to include this in a future version.
 
 == Screenshots ==
@@ -77,6 +77,9 @@ At the moment the review submit form is not displayed, though we are planing to 
 For screenshots and other information please visit <a href="https://shopitpress.com/plugins/sip-reviews-shortcode-woocommerce/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce">SIP Reviews Shortcode for WooCommerce</a> in our website.
 
 == Changelog ==
+
+= 1.0.2 - 09/05/2015 =
+* Fixed an issue where stars would not appear selected when users submit a review
 
 = 1.0.1 - 08/21/2015 =
 * Added prefixes to the function names
