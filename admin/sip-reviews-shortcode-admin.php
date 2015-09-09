@@ -10,20 +10,38 @@
  */
 
 define( 'SIP_RSWC_UTM_CAMPAIGN', 'sip-reviews-shortcode' );
-define( 'SIP_RSWC_ADMIN_VERSION' , '1.0.1' );
+define( 'SIP_RSWC_ADMIN_VERSION' , '1.0.2' );
 
-if ( !defined( 'SIP_PANEL' ) ) {
-  define( 'SIP_PANEL' , TRUE);
-  define( 'SIP_RSWC_PLUGIN', 'SIP Reviews Shortcode for WooCommerce' );
-  define( 'SIP_SPWC_PLUGIN', 'SIP Social Proof for WooCommerce' );
+
+if ( ! defined( 'SIP_SPWC_PLUGIN' ) )
+  define( 'SIP_SPWC_PLUGIN',  'SIP Social Proof for WooCommerce' );
+
+if ( ! defined( 'SIP_FEBWC_PLUGIN' ) )
   define( 'SIP_FEBWC_PLUGIN', 'SIP Front End Bundler for WooCommerce' );
-  define( 'SIP_WPGUMBY_THEME', 'WPGumby' );
 
-  define( 'SIP_RSWC_PLUGIN_URL', 'https://shopitpress.com/plugins/sip-reviews-shortcode-woocommerce/' );
-  define( 'SIP_SPWC_PLUGIN_URL', 'https://shopitpress.com/plugins/sip-social-proof-woocommerce/' );
+if ( ! defined( 'SIP_RSWC_PLUGIN' ) )
+  define( 'SIP_RSWC_PLUGIN',  'SIP Reviews Shortcode for WooCommerce' );
+
+if ( ! defined( 'SIP_WPGUMBY_THEME' ) )
+  define( 'SIP_WPGUMBY_THEME','WPGumby' );
+
+if ( ! defined( 'SIP_SPWC_PLUGIN_URL' ) )
+  define( 'SIP_SPWC_PLUGIN_URL',  'https://shopitpress.com/plugins/sip-social-proof-woocommerce/' );
+
+if ( ! defined( 'SIP_FEBWC_PLUGIN_URL' ) )
   define( 'SIP_FEBWC_PLUGIN_URL', 'https://shopitpress.com/plugins/sip-front-end-bundler-woocommerce/' );
-  define( 'SIP_WPGUMBY_THEME_URL', 'https://shopitpress.com/themes/wpgumby/' );
-}
+
+if ( ! defined( 'SIP_RSWC_PLUGIN_URL' ) )
+  define( 'SIP_RSWC_PLUGIN_URL',  'https://shopitpress.com/plugins/sip-reviews-shortcode-woocommerce/' );
+
+if ( ! defined( 'SIP_WPGUMBY_THEME_URL' ) )
+  define( 'SIP_WPGUMBY_THEME_URL','https://shopitpress.com/themes/wpgumby/' );
+
+if ( ! defined( 'SIP_CCWC_PLUGIN' ) )
+  define( 'SIP_CCWC_PLUGIN',  'SIP Cookie Check for WooCommerce' );
+
+if ( ! defined( 'SIP_CCWC_PLUGIN_URL' ) )
+  define( 'SIP_CCWC_PLUGIN_URL',  'https://shopitpress.com/plugins/sip-cookie-check-woocommerce/' );
 
 $get_optio_version = get_option( 'sip_version_value' );
 if( $get_optio_version == "" ) {
