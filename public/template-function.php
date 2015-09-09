@@ -192,31 +192,13 @@
 						<div class="col12">
 							<div class="custom_products_reviews">
 								<!-- to call the list of the comments -->
-								<?php woocommerce_print_reviews( $id , $product_title ); ?>
+								<?php woocommerce_print_reviews( $id , $product_title , $no_of_reviews); ?>
 							</div>
 						</div><!-- .col12 -->
 					</div><!-- .row -->
 				</div><!-- .container -->
 			</div>
 			<div style="clear:both"></div>
-			<!-- it is for load more comments -->
-				<script type="text/javascript">
-					jQuery(document).ready(function () {
-				    size_li = jQuery("#comments_list li").size();
-				    x=<?php echo $no_of_reviews; ?>;
-				    jQuery('#comments_list li:lt('+x+')').show();
-				    if( size_li <= x ){
-				        jQuery('#load_more').hide();
-				      }
-				    jQuery('#load_more').click(function () {
-				        x= (x+<?php echo $no_of_reviews; ?> <= size_li) ? x+<?php echo $no_of_reviews; ?> : size_li;
-				        jQuery('#comments_list li:lt('+x+')').show();
-				        if( x == size_li ){
-				          jQuery('#load_more').hide();
-				        }
-				    });
-				});
-				</script>
 			<?php
 			return ob_get_clean();
 		}// end of post id is product or not
@@ -284,7 +266,28 @@
 	 * @since    	1.0.0
 	 * @return 		string , mixed html string in $out_reviews
 	 */
-	function woocommerce_print_reviews( $id = "" , $title="" ) {
+	function woocommerce_print_reviews( $id = "" , $title="" , $no_of_reviews=5 ) {
+		?>
+			<!-- it is for load more comments -->
+				<script type="text/javascript">
+					jQuery(document).ready(function () {
+				    size_li_<?php echo $id; ?> = jQuery(".commentlist_<?php echo $id; ?> li").size();
+				    
+				    x_<?php echo $id; ?> = <?php echo $no_of_reviews; ?>;
+				    jQuery('.commentlist_<?php echo $id; ?> li:lt('+x_<?php echo $id; ?>+')').show();
+				    if( size_li_<?php echo $id; ?> <= x_<?php echo $id; ?>  ){
+				        jQuery('#load_more_<?php echo $id; ?>').hide();
+				      }
+				    jQuery('#load_more_<?php echo $id; ?>').click(function () {
+				        x_<?php echo $id; ?> = (x_<?php echo $id; ?> + <?php echo $no_of_reviews; ?> <= size_li_<?php echo $id; ?>) ? x_<?php echo $id; ?> + <?php echo $no_of_reviews; ?> : size_li_<?php echo $id; ?>;
+				        jQuery('.commentlist_<?php echo $id; ?> li:lt('+ x_<?php echo $id; ?> +')').show();
+				        if( x_<?php echo $id; ?>  == size_li_<?php echo $id; ?> ){
+				          jQuery('#load_more_<?php echo $id; ?>').hide();
+				        }
+				    });
+				});
+				</script>
+		<?php
 		global $wpdb, $post;
 		$query 							= 	"SELECT c.* FROM {$wpdb->prefix}posts p, {$wpdb->prefix}comments c WHERE p.ID = {$id} AND p.ID = c.comment_post_ID AND c.comment_approved > 0 AND p.post_type = 'product' AND p.post_status = 'publish' AND p.comment_count > 0 ORDER BY c.comment_date DESC";
 		$comments_products 	= 	$wpdb->get_results($query, OBJECT);
@@ -384,7 +387,7 @@
 			}//end of lop
 		} //end of if condition
 		if ( $out_reviews != '' ) {
-			$out_reviews = '<ul id="comments_list" class="commentlist">' . $out_reviews . '</ul><div id="load_more"><button '. $button .' type="button">Load More</button></div>';
+			$out_reviews = '<ul id="comments_list" class="commentlist commentlist_'. $id .'">' . $out_reviews . '</ul><div class="load_more" id="load_more_'. $id .'"><button '. $button .' type="button">Load More</button></div>';
 		} else {
 			$out_reviews = '<ul class="commentlist"><li><p class="content-comment">'. __('No products reviews.') . '</p></li></ul>';
 		}

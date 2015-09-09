@@ -10,7 +10,7 @@
  * Plugin Name:       SIP Reviews Shortcode for WooCommerce
  * Plugin URI:        https://shopitpress.com/plugins/sip-reviews-shortcode-woocommerce/
  * Description: 	  	Creates a shortcode, [woocommerce_reviews id="n"],  that displays the reviews, of any WooCommerce product. [woocommerce_reviews] will show the reviews of the current product if applicable.  This plugin requires WooCommerce.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Requires:		  		PHP5, WooCommerce Plugin
  * Author:            ShopitPress <hello@shopitpress.com>
  * Author URI:        https://shopitpress.com
@@ -19,7 +19,7 @@
  * Copyright: 		  	© 2015 ShopitPress(email: hello@shopitpress.com)
  * Text Domain:       sip-reviews-shortcode
  * Domain Path:       /languages
- * Last updated on:   21-08-2015
+ * Last updated on:   05-09-2015
 */
 
 class SIP_Reviews_Shortcode_WC{
@@ -48,7 +48,7 @@ class SIP_Reviews_Shortcode_WC{
 	 */
 	public function constants() {
 		define( 'SIP_RSWC_NAME', 'SIP Reviews Shortcode for WooCommerce' );
-		define( 'SIP_RSWC_VERSION', '1.0.1' );
+		define( 'SIP_RSWC_VERSION', '1.0.3' );
 		define( 'SIP_RSWC_PLUGIN_SLUG', 'sip-reviews-shortcode-woocommerce' );
 		define( 'SIP_RSWC_BASENAME', plugin_basename( __FILE__ ) );
 		define( 'SIP_RSWC_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
