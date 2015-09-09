@@ -1,2 +1,0 @@
-Plugin Name: 	SIP Reviews Shortcode for WooCommerce
-Authors: 	shopitpress, fransanchezoria

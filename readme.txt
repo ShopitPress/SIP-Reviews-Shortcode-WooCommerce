@@ -3,7 +3,7 @@ Contributors: (shopitpress, fransanchezoria)
 Tags: SIP Reviews Shortcode WooCommerce, reviews, woocommerce, shortcode, review shortcode
 Requires at least: 3.8 or higher
 Tested up to: 4.3
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,6 +77,10 @@ At the moment the review submit form is not displayed, though we are planing to 
 For screenshots and other information please visit <a href="https://shopitpress.com/plugins/sip-reviews-shortcode-woocommerce/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=sip-reviews-shortcode-woocommerce">SIP Reviews Shortcode for WooCommerce</a> in our website.
 
 == Changelog ==
+
+= 1.0.3 - 09/09/2015 =
+* Plugin now accepts multiple instances on the same page
+* SIP version 1.0.2
 
 = 1.0.2 - 09/05/2015 =
 * Fixed an issue where stars would not appear selected when users submit a review
